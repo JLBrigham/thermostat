@@ -27,7 +27,15 @@ describe('Thermostat', function() {
                 thermostat.down();
             }
             expect(thermostat.getCurrentTemperature()).toEqual(10);
-        });    
+        });   
+        
+        it('can be reset to the default temperature', function(){
+            for (var i = 0; i < 6; i++) {
+                thermostat.up();
+            }
+            thermostat.resetTemperature();
+            expect(thermostat.getCurrentTemperature()).toEqual(20);
+        });
     });
 
     describe('has a power saving mode', function() { 

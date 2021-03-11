@@ -1,8 +1,24 @@
 <html>
     <head>
         <title>Thermostat</title>
+
+        <style>
+            .low-usage{
+                color:green
+            }
+
+            .medium-usage{
+                color: black
+            }
+
+            .high-usage{
+                color: red
+            }
+
+        </style>
     </head>
     <body>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <section>
             <h1 id="temperature"></h1>
             <p>
@@ -15,5 +31,6 @@
             </p>
         </section>
         <script src="src/thermostat.js"></script>
+        <script src="interface.js"></script>
     </body>
 </html>

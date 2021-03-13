@@ -1,0 +1,61 @@
+
+
+body {
+    background-color: #FFAEBC;
+    font-family: 'Syncopate', sans-serif;
+    text-align: center;
+    padding-top: 10%;
+    color: rgb(150, 146, 146)
+}
+
+#temperature {
+    font-size: 100px;
+    color: rgb(150, 146, 146);
+    margin-bottom: 50px;
+}
+
+#current-city {
+    color: rgb(150, 146, 146);
+    border-radius: 12px;
+    padding: 10px;
+    background-color: ;
+}
+
+#temperature-up {
+    background-color: rgb(240, 16, 128);
+    font-size: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    border-width: medium;
+    border-color: rgb(150, 146, 146);
+    border-style: solid;
+    color: rgb(150, 146, 146);
+}
+
+#current-outside-temp {
+    font-size: 30px;
+}
+
+#temperature-down {
+    background-color: #B4F8C8;
+    font-size: 50px;
+    padding: 6px 11px;
+    border-radius: 50%;
+    border-width: medium;
+    border-color: rgb(150, 146, 146);
+    border-style: solid;
+    color: rgb(150, 146, 146);
+}
+
+.low-usage{
+    color:green;
+
+}
+
+.medium-usage{
+    color: black
+}
+
+.high-usage{
+    color: red
+}

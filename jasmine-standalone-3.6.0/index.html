@@ -1,27 +1,16 @@
 <html>
     <head>
         <title>Thermostat</title>
-
-        <style>
-            .low-usage{
-                color:green
-            }
-
-            .medium-usage{
-                color: black
-            }
-
-            .high-usage{
-                color: red
-            }
-
-        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet"> 
+        <link rel='stylesheet' href='stylesheet.css' >
+    
     </head>
     <body>
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <section>
             <h1 id="temperature"></h1>
-            <section><h1>Current Temperature: <span id="current-temperature"></span></h1>
+            <section><h1 id="current-outside-temp">Current Temperature: <span id="current-temperature"></span> degrees</h1>
                 <select id="current-city">
                     <option value="chamonix">Chamonix</option>
                     <option value="london">London</option>
@@ -32,8 +21,14 @@
             <p>
              <button id="temperature-up">+</button>
              <button id="temperature-down">-</button>
+             <br>
+             <br>
              <button id="temperature-reset">reset</button>
+             <br>
+             <br>
              power saving mode is <span id="power-saving-status">on</span>
+             <br>
+             <br>
              <button id="powersaving-on">PSM on</button>
              <button id="powersaving-off">PSM off</button>
             </p>
